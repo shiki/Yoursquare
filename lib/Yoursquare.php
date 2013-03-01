@@ -147,7 +147,7 @@ class Yoursquare extends \CApplicationComponent
       'language' => 'en',
     ), $config);
 
-    return new \FoursquareApi($config['clientId'], $config['clientSecret'], $config['redirectUri'],
+    return new \Yoursquare\FoursquareClient($config['clientId'], $config['clientSecret'], $config['redirectUri'],
       $config['version'], $config['language']);
   }
 }
