@@ -145,10 +145,10 @@ class Yoursquare extends \CApplicationComponent
       'redirectUri' => '',
       'version' => 'v2',
       'language' => 'en',
+      'api_version' => '20130905'
     ), $config);
 
     return new \Yoursquare\FoursquareClient($config['clientId'], $config['clientSecret'], $config['redirectUri'],
-      $config['version'], $config['language']);
+      $config['version'], $config['language'], $config['api_version']);
   }
 }
-
